@@ -28,7 +28,7 @@ data.forEach((item) => {
   } else {
     item.name = `${namePrefix} #${item.edition}`;
     item.description = description;
-    item.image = `${baseHiddenUri}/hidden${item.edition}.png`;
+    item.image = `${baseHiddenUri}/hidden.png`;
     delete item["dna"];
     delete item["date"];
     delete item["attributes"];
