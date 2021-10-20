@@ -12,8 +12,8 @@ const network = NETWORK.eth;
 const namePrefix = "Fortune Cookies";
 const description =
   "What's better than eating a cookie? Hearing wise words from Chinese sages after eating a cookie!";
-const baseUri = "ipfs://QmUBtirhdR2DofcbZKKZgvAEFZz9zNnpMCa29L4V7aXdTW";
-
+const baseUri = "ipfs://QmSoPk8pxWxJPxKBmTJFZdBK3sLnuutJkcwtc4Rft2PmbD";
+const baseHiddenUri = "ipfs://QmNwD9Bg3FTbvB7Bd39QyXCij55xP7VpRq25T2b99NFfU4";
 const solanaMetadata = {
   symbol: "NOC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
@@ -29,7 +29,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 25,
     layersOrder: [{ name: "Background" }, { name: "Quote" }, { name: "Sage" }],
   },
 ];
@@ -83,6 +83,7 @@ const preview = {
 module.exports = {
   format,
   baseUri,
+  baseHiddenUri,
   description,
   background,
   uniqueDnaTorrance,
