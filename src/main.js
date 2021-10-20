@@ -284,7 +284,8 @@ const startCreating = async () => {
   let failedCount = 0;
   let abstractedIndexes = [];
   for (
-    let i = network == NETWORK.sol ? 0 : 1;
+    // Start at 0 index for eth as well
+    let i = network == NETWORK.sol ? 0 : 0;
     i <= layerConfigurations[layerConfigurations.length - 1].growEditionSizeTo;
     i++
   ) {
